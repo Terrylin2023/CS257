@@ -17,7 +17,6 @@ class HDStructure:
         """
         return {symbol: np.random.choice([-1, 1], size=dimension) for symbol in symbols}
     
-    
     def binding(self, hv1, hv2):
         """
         Perform elementwise multiplication for MAP-based HDC
@@ -60,8 +59,6 @@ class HDStructure:
             self.symbols.append(symbol)
             self.codebook[symbol] = np.random.choice([-1, 1], size=self.dimension)
             
-
-    
     def decode(self, hv_encoded):
         """ 
         optional: attempt to decode or interpret the HV
